@@ -1,0 +1,50 @@
+html{
+    font-size: 65.5%;
+  }
+  
+.para-1{
+    font-size: 4rem;
+}
+.pre-details{
+    width: auto;
+    margin: 10px;
+    padding: 10px;
+    display:flex;
+    justify-content:center;
+}
+.pre_details{
+    padding: 10px;
+    margin: 10px;
+   
+}
+.upgrade-btn{
+    width:35rem;
+    height: 4rem;
+   
+    background-color: #039634;
+    color:white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+}
+.upgrade-btn:hover{
+    cursor: pointer;
+    background-color:#09ca49;
+}
+.para-2{
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width:1200px) {
+    html{
+      font-size: 60.5%;
+    } 
+  }
+  @media (max-width:400px) {
+    html{
+      font-size: 30.5%;
+    } 
+  }

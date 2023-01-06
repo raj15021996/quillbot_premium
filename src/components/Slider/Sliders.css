@@ -1,0 +1,56 @@
+.main {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 5rem;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content:space-evenly;
+    
+  }
+  .headings {
+    font-weight: bold;
+    font-size: 2.2rem;
+    padding: 5px;
+  }
+  img {
+    height: 35rem;
+    width: 55rem
+  }
+  .image{
+    margin-top: 5rem;
+    padding-bottom: 30px;
+  }
+  .container {
+    width: 50rem;
+    margin: 5rem 0 10rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: start;
+    word-wrap: break-word;
+  }
+  
+  .details {
+    font-size: 1.7rem;
+    color: rgb(98, 96, 96);
+    padding: 10px;
+    text-align: left;
+  }
+  .progress {
+    padding: 2px 5px;
+  }
+  @media (max-width:500px) {
+    
+    img {
+      height: 10rem;
+      width: 25rem
+    }
+    .image{
+      margin-top: 5rem;
+    }
+    .container{
+      gap: 0;
+      margin: 0;
+    }
+  }

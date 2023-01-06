@@ -1,0 +1,50 @@
+.table-container{
+  box-shadow: 0px 10px 10px #aaabab;
+  border-radius: 10px;
+  margin-bottom: 0;
+}
+.content{
+    display: flex;
+}
+.data,.done{
+    margin-left: 5px;
+    padding: 1px;
+    font-size: 1.5rem;
+    height: 28px;
+   
+}
+.pay{
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;    
+}
+.btn-pre{
+    width:35rem;
+    height: 4rem;
+   
+    background-color: #d59603;
+    color:white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+}
+.btn-pre:hover{
+    cursor: pointer;
+    background-color: #E8AA1A;
+}
+.btn-free{
+    width:35rem;
+    height: 4rem;
+   
+    background-color: #039634;
+    color:white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+}
+.btn-free:hover{
+    cursor: pointer;
+    background-color:#09ca49;
+}
