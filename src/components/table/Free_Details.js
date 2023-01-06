@@ -27,7 +27,7 @@ const rows = [
 export default function Free_Details() {
     return (
         <TableContainer className='table-container' >
-            <Table  sx={{ width: '45rem'}} aria-label="simple table">
+            <Table sx={{ width:{xs:'2rem', sm:'30rem',md:'40rem'} }} aria-label="simple table">
                 <TableHead>
                     <TableRow>
                         <TableCell sx={{
@@ -39,8 +39,8 @@ export default function Free_Details() {
                     </TableRow>
                     <TableRow>
                         <TableCell align="center">
-                        <button className='btn-free'>
-                        Sign Up - It's Free
+                            <button className='btn-free'>
+                                Sign Up - It's Free
                             </button>
                         </TableCell>
                     </TableRow>
@@ -48,28 +48,33 @@ export default function Free_Details() {
                 <TableBody >
                     {rows.map((row, index) => (
                         <TableRow >
-                            <TableCell align="left">
+                            <TableCell align="left" sx={{ padding: { xs: '4px', sm: "10px", md: '12px' } }}>
                                 <div className='content'>
                                     <div className='done'>
                                         {index > 4 ?
                                             <CloseIcon sx={{ color: "red" }} fontSize='large' /> :
-                                            <DoneIcon sx={{ color: "green" }} fontSize='large'/>
+                                            <DoneIcon sx={{ color: "green" }} fontSize='large' />
                                         }
+                                        <div >
+                                            {row}
+                                        </div>
                                     </div>
-                                    <div className='data'>
-                                        {row}
-                                    </div>
+
                                 </div>
                             </TableCell>
                         </TableRow>
                     ))}
                     <TableRow>
-                        <TableCell sx={{backgroundColor:'rgba(128, 128, 128, 0.19)'}}>
-                       <p className='pay'>No Credit Card Required</p> 
+                        <TableCell sx={{ backgroundColor: 'rgba(128, 128, 128, 0.19)' }}>
+                            <p className='pay'>No Credit Card Required</p>
                         </TableCell>
                     </TableRow>
                 </TableBody>
             </Table>
+
+            <div>
+            </div>
         </TableContainer>
     );
 }
+

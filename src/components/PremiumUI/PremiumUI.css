@@ -1,5 +1,6 @@
 html{
     font-size: 65.5%;
+    
   }
   
 .para-1{
@@ -15,7 +16,7 @@ html{
 .pre_details{
     padding: 10px;
     margin: 10px;
-   
+    
 }
 .upgrade-btn{
     width:35rem;
@@ -42,9 +43,49 @@ html{
     html{
       font-size: 60.5%;
     } 
+    .pre_details{
+        padding: 8px;
+        margin: 8px;
+       
+    }
   }
-  @media (max-width:400px) {
+  @media (max-width:800px) {
+    html{
+      font-size: 45.5%;
+    } 
+    .pre_details{
+        padding: 4px;
+        margin: 4px;
+       
+    }
+  }
+  @media (max-width:670px) {
+    html{
+      font-size: 35.5%;
+    } 
+    .pre_details{
+        padding: 3px;
+        margin: 3px;
+       
+    }
+  }
+  @media (max-width:540px) {
     html{
       font-size: 30.5%;
     } 
+    .pre_details{
+        padding: 2px;
+        margin: 2px;
+       
+    }
+  }
+  @media (max-width:400px) {
+    html{
+      font-size: 25.5%;
+    } 
+    .pre_details{
+        padding: 0px;
+        margin: 0px;
+       
+    }
   }

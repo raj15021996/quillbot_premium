@@ -10,7 +10,7 @@
   }
   .headings {
     font-weight: bold;
-    font-size: 2.2rem;
+    font-size: 2rem;
     padding: 5px;
   }
   img {
@@ -40,7 +40,7 @@
   .progress {
     padding: 2px 5px;
   }
-  @media (max-width:500px) {
+  @media (max-width:400px) {
     
     img {
       height: 10rem;

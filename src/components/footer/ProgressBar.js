@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import './footer.css';
 import {
   CircularProgressbarWithChildren,
   buildStyles
@@ -7,31 +8,36 @@ import "react-circular-progressbar/dist/styles.css";
 
 export default function ProgressBar({ val,sign,details,abouts}) {
   const [values, setValues] = useState(0);
-
+  const [progressSize, setProgressSize]=useState(0);
   useEffect(() => {
     const timer = setTimeout(() => {
-      setValues(val);
-    },500);
+      if(values<val){
+        setValues(values+1);
+        sign=='%' ? setProgressSize(val):setProgressSize(100);
+      }
+      
+    },5);
     return () => {
       clearTimeout(timer);
     };
-  }, []);
+  }, [values]);
 
   return (
     <div style={{ textAlign: "center" }}>
-
-      <div style={{  fontWeight:"bold"}}>
+      <div className="p-bar">
+   
         <CircularProgressbarWithChildren
-          value={values}
+          value={progressSize}
           text={`${values}${sign}`}
           strokeWidth={5}
           styles={
             buildStyles({
             textColor: "#039634",
-            pathColor: "#039634"
+            pathColor: "#039634",
+            textSize:'3.5rem'
           })}
         >
-          <div style={{ fontSize: 20, marginTop: 40, color: "#039634" }}>
+          <div className="del">
             <strong>{details}</strong>
           </div>
         </CircularProgressbarWithChildren>

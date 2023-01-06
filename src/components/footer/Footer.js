@@ -1,4 +1,4 @@
-import './foode.css'
+import './footer.css'
 import React, { useState } from "react";
 import ProgressBar from "./ProgressBar";
 
@@ -29,7 +29,7 @@ export default function Footer() {
     <div className="App">
       
       <div className="footer-heading">
-        <p className="headings">Write better, faster, and clearer instantly</p>
+        <p className="heading">Write better, faster, and clearer instantly</p>
         <p className="sub-heading">
           QuillBot is trusted by students, professional writers, and business
           people who want to write more effectively.
